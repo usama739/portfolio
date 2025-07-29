@@ -16,6 +16,9 @@ export const metadata: Metadata = {
 	title: 'Usama Aslam - Full-Stack Developer',
 	description:
 		'Welcome to my portfolio! I am a passionate full-stack developer who bridges the gap between frontend and backend development. Specializing in creating complete web solutions, from beautiful user interfaces to robust server architectures.',
+	icons: {
+		icon: '/public/assets/web-development.png',
+	},
 	keywords: [
 		'Full-Stack Developer',
 		'Software Engineer',
@@ -81,7 +84,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<head>
-				<link rel="icon" href="/assets/web-development.png" />
+				<link rel="icon" href="/public/assets/web-development.png" />
 				<link rel="preconnect" href="https://fonts.googleapis.com" />
 				<link rel="preconnect" href="https://fonts.gstatic.com" />
 				<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
