@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 import TechStack from './TechStack';
 import { Typewriter } from 'react-simple-typewriter'
+import Image from 'next/image';
 
 export default function HeroSection() {
 	const [selectedStack, setSelectedStack] = useState<'frontend' | 'backend' | 'devops' | null>(null);
@@ -16,9 +17,18 @@ export default function HeroSection() {
 
 			<div className="relative z-10 min-h-screen flex flex-col items-center justify-center px-4 pt-8 md:pt-0">
 				<motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-8 md:mb-14">
-					<div className="space-y-3 md:space-y-4 mb-6 md:mb-8 pt-[0px] md:pt-[80px]">
-						<div className='mx-auto flex justify-center h-[190px]'>
-							<img src="/assets/image.png" alt="Usama Aslam" className="border-4 border-gray-800 shadow-lg" style={{ borderRadius: '50%' }}/>
+					<div className="space-y-3 md:space-y-4 mb-6 md:mb-8 pt-[0px] md:pt-[60px]">
+						<div className='mx-auto flex justify-center'>
+							<Image
+								src="/assets/image.png"
+								alt="Usama Aslam"
+								width={200}  // set an approximate width
+								height={100} // and height
+								className="border-4 border-gray-800 shadow-lg"
+								style={{ borderRadius: '50%' }}
+							/>
+
+							{/* <img src="/assets/image.png" alt="Usama Aslam" className="border-4 border-gray-800 shadow-lg" style={{ borderRadius: '50%' }}/> */}
 						</div>
 
 						<motion.h1
@@ -27,7 +37,7 @@ export default function HeroSection() {
 							transition={{ duration: 0.8 }}
 							className="text-2xl md:text-4xl font-bold text-white text-center"
 						>
-							Hi, I'm{' '}
+							Hi, I&apos;m{' '}
 							<h1 className="text-5xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-teal-500">
 								<Typewriter
 									words={['Muhammad Usama Aslam']}

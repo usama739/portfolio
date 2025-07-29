@@ -1,6 +1,6 @@
 // components/TechStackMarquee.tsx
 
-import { FaReact, FaNodeJs, FaPhp, FaDocker, FaAws, FaGitAlt, FaGithub, FaDatabase, FaBootstrap, FaJs} from "react-icons/fa";
+import { FaReact, FaNodeJs, FaPhp, FaDocker, FaAws, FaGitAlt, FaGithub, FaBootstrap, FaJs} from "react-icons/fa";
 import {SiTailwindcss, SiNextdotjs, SiTypescript, SiMysql, SiMongodb, SiLaravel,SiPostman, SiDigitalocean, SiClerk, SiExpress } from "react-icons/si";
 import { motion } from "framer-motion";
 import { BiLogoVisualStudio } from "react-icons/bi";

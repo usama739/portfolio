@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { FaGithub } from 'react-icons/fa';
+import Image from 'next/image';
 
 export default function ProjectsSection() {
 	const projects = [
@@ -222,11 +223,18 @@ export default function ProjectsSection() {
 										</div>
 										
 										{project.image ? (
-											<img
+											<Image
 												src={project.image}
 												alt={`${project.title} UI`}
+												width={800}  // set an approximate width
+												height={600} // and height
 												className="rounded-md object-contain w-full h-full"
 											/>
+											// <img
+											// 	src={project.image}
+											// 	alt={`${project.title} UI`}
+											// 	className="rounded-md object-contain w-full h-full"
+											// />
 										) : (
 											<div className='flex justify-center items-center h-full'>
 												<div className="text-sm text-gray-400 text-center border border-dashed border-gray-600 rounded-md p-6">
