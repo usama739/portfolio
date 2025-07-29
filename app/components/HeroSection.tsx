@@ -51,7 +51,7 @@ export default function HeroSection() {
 							</h1>
 						</motion.h1>
 
-						<h2 className="text-4xl md:text-4xl font-bold text-white">Full Developer</h2>
+						<h2 className="text-4xl md:text-4xl font-bold text-white">Full Stack Developer</h2>
 						<p className="text-lg md:text-xl text-gray-400 max-w-4xl mx-auto">
 							With 1.5+ years of professional experience, I engineer end-to-end web solutions that blend functionality with performance. Skilled in React, Nodejs, Laravel, and cloud deployments, I bring ideas to life.
 						</p>

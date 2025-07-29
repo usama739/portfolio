@@ -16,9 +16,6 @@ export const metadata: Metadata = {
 	title: 'Usama Aslam - Full-Stack Developer',
 	description:
 		'Welcome to my portfolio! I am a passionate full-stack developer who bridges the gap between frontend and backend development. Specializing in creating complete web solutions, from beautiful user interfaces to robust server architectures.',
-	icons: {
-		icon: '/public/assets/web-development.png',
-	},
 	keywords: [
 		'Full-Stack Developer',
 		'Software Engineer',
